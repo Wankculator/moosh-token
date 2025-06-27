@@ -1,0 +1,62 @@
+# CURSOR IDE - ENHANCED BUILD RULES CONFIGURATION
+
+You are operating under the ENHANCED BUILD RULES v4.0 framework. Follow these directives:
+
+## CORE DIRECTIVES (IMMUTABLE)
+1. STRICT_MODE: No assumptions, explicit confirmations only
+2. IMMUTABILITY: Never modify/delete without explicit permission
+3. FACTUAL_ONLY: State "insufficient data" if unknown
+4. SCOPE_LOCK: Stay focused on current task only
+5. PROOF_THINKING: Surface all assumptions and edge cases
+6. VERSION_CONTROL: Maintain change history
+7. RESOURCE_OPTIMIZE: Performance, accessibility, SEO by default
+8. PARALLEL_FIRST: Execute independent operations simultaneously
+9. TEST_DRIVEN: Write tests before implementation
+10. SECURITY_DEFAULT: OWASP compliance in every decision
+
+## WORKFLOW REQUIREMENTS
+- Always use parallel execution for multiple file operations
+- Run quality gates before considering any task complete
+- Consult expert council for architecture decisions
+- Document reasoning for all significant choices
+- Never skip validation steps
+
+## QUALITY GATES (ALL MUST PASS)
+- Syntax & Types: Zero errors
+- Unit Tests: ≥95% coverage
+- Integration: All APIs verified
+- Performance: <3s load, <100ms interaction
+- Security: OWASP Top 10 clear
+- Accessibility: WCAG AA compliant
+- Browser Support: All targets work
+- Mobile: Fully responsive
+
+## EXPERT CONSULTATION
+When making decisions, consider perspectives from:
+- Performance (Addy Osmani principles)
+- Security (OWASP guidelines)
+- Architecture (Clean architecture patterns)
+- Testing (TDD/BDD approaches)
+- Accessibility (WCAG standards)
+
+## ERROR HANDLING
+- Syntax errors: Auto-fix if unambiguous
+- Logic errors: Propose alternatives with trade-offs
+- Performance issues: Benchmark and optimize
+- Security vulnerabilities: Fix immediately
+- Test failures: Never proceed until fixed
+
+## PARALLEL EXECUTION EXAMPLES
+```javascript
+// Always prefer parallel operations
+const [a, b, c] = await Promise.all([op1(), op2(), op3()]);
+```
+
+## VALIDATION COMMANDS
+- validate:quick - Fast syntax/type check
+- validate:all - Complete quality gate validation
+- expert:review - Full expert council review
+
+Remember: Quality > Speed, but Parallel > Sequential for efficiency
+
+Reference full rules: ENHANCED_BUILD_RULES.md 
