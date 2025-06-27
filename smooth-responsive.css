@@ -1,0 +1,270 @@
+/* SMOOTH RESPONSIVE SCALING SYSTEM */
+
+/* Base responsive scaling using CSS custom properties */
+:root {
+    --responsive-scale: 1;
+}
+
+/* Clean scaling breakpoints */
+@media (max-width: 1400px) { :root { --responsive-scale: 0.95; } }
+@media (max-width: 1200px) { :root { --responsive-scale: 0.9; } }
+@media (max-width: 1024px) { :root { --responsive-scale: 0.85; } }
+@media (max-width: 768px) { :root { --responsive-scale: 0.8; } }
+@media (max-width: 640px) { :root { --responsive-scale: 0.75; } }
+@media (max-width: 480px) { :root { --responsive-scale: 0.7; } }
+
+/* Typography - Smooth Scaling */
+body {
+    font-size: calc(13px * var(--responsive-scale)) !important;
+}
+
+h1, .text-4xl, .text-5xl {
+    font-size: calc(48px * var(--responsive-scale)) !important;
+}
+
+h2, .text-3xl {
+    font-size: calc(36px * var(--responsive-scale)) !important;
+}
+
+h3, .text-2xl {
+    font-size: calc(24px * var(--responsive-scale)) !important;
+}
+
+h4, .text-xl {
+    font-size: calc(20px * var(--responsive-scale)) !important;
+}
+
+h5, .text-lg {
+    font-size: calc(18px * var(--responsive-scale)) !important;
+}
+
+.text-base {
+    font-size: calc(16px * var(--responsive-scale)) !important;
+}
+
+.text-sm {
+    font-size: calc(14px * var(--responsive-scale)) !important;
+}
+
+.text-xs {
+    font-size: calc(12px * var(--responsive-scale)) !important;
+}
+
+/* Components - Smooth Scaling */
+.btn-primary, .btn-secondary {
+    font-size: calc(14px * var(--responsive-scale)) !important;
+    padding: calc(12px * var(--responsive-scale)) calc(24px * var(--responsive-scale)) !important;
+}
+
+.nav-link {
+    font-size: calc(14px * var(--responsive-scale)) !important;
+    padding: calc(8px * var(--responsive-scale)) calc(16px * var(--responsive-scale)) !important;
+}
+
+.cursor-header {
+    height: calc(53px * var(--responsive-scale)) !important;
+    padding: 0 calc(20px * var(--responsive-scale)) !important;
+}
+
+.cursor-content {
+    padding: calc(40px * var(--responsive-scale)) calc(20px * var(--responsive-scale)) 0 !important;
+}
+
+.cursor-card {
+    padding: calc(24px * var(--responsive-scale)) !important;
+    margin-bottom: calc(16px * var(--responsive-scale)) !important;
+}
+
+.card {
+    padding: calc(24px * var(--responsive-scale)) !important;
+}
+
+.code-block {
+    padding: calc(24px * var(--responsive-scale)) !important;
+    font-size: calc(13px * var(--responsive-scale)) !important;
+}
+
+.input-field {
+    font-size: calc(14px * var(--responsive-scale)) !important;
+    padding: calc(12px * var(--responsive-scale)) calc(16px * var(--responsive-scale)) !important;
+}
+
+.stats-grid {
+    padding: calc(20px * var(--responsive-scale)) !important;
+}
+
+.warning-box {
+    padding: calc(16px * var(--responsive-scale)) !important;
+}
+
+.lang-btn {
+    font-size: calc(13px * var(--responsive-scale)) !important;
+    padding: calc(6px * var(--responsive-scale)) calc(12px * var(--responsive-scale)) !important;
+}
+
+.theme-toggle {
+    width: calc(36px * var(--responsive-scale)) !important;
+    height: calc(36px * var(--responsive-scale)) !important;
+    padding: calc(8px * var(--responsive-scale)) !important;
+    margin-left: calc(12px * var(--responsive-scale)) !important;
+}
+
+.theme-toggle svg {
+    width: calc(18px * var(--responsive-scale)) !important;
+    height: calc(18px * var(--responsive-scale)) !important;
+}
+
+/* Logo scaling */
+.cursor-header img {
+    width: calc(32px * var(--responsive-scale)) !important;
+    height: calc(32px * var(--responsive-scale)) !important;
+}
+
+/* Spacing - Smooth Scaling */
+.gap-1 { gap: calc(4px * var(--responsive-scale)) !important; }
+.gap-2 { gap: calc(8px * var(--responsive-scale)) !important; }
+.gap-3 { gap: calc(12px * var(--responsive-scale)) !important; }
+.gap-4 { gap: calc(16px * var(--responsive-scale)) !important; }
+.gap-6 { gap: calc(24px * var(--responsive-scale)) !important; }
+.gap-8 { gap: calc(32px * var(--responsive-scale)) !important; }
+
+.mb-1 { margin-bottom: calc(4px * var(--responsive-scale)) !important; }
+.mb-2 { margin-bottom: calc(8px * var(--responsive-scale)) !important; }
+.mb-3 { margin-bottom: calc(12px * var(--responsive-scale)) !important; }
+.mb-4 { margin-bottom: calc(16px * var(--responsive-scale)) !important; }
+.mb-6 { margin-bottom: calc(24px * var(--responsive-scale)) !important; }
+.mb-8 { margin-bottom: calc(32px * var(--responsive-scale)) !important; }
+.mb-12 { margin-bottom: calc(48px * var(--responsive-scale)) !important; }
+
+.mt-2 { margin-top: calc(8px * var(--responsive-scale)) !important; }
+.mt-4 { margin-top: calc(16px * var(--responsive-scale)) !important; }
+.mt-8 { margin-top: calc(32px * var(--responsive-scale)) !important; }
+.mt-12 { margin-top: calc(48px * var(--responsive-scale)) !important; }
+
+.p-2 { padding: calc(8px * var(--responsive-scale)) !important; }
+.p-3 { padding: calc(12px * var(--responsive-scale)) !important; }
+.p-4 { padding: calc(16px * var(--responsive-scale)) !important; }
+.p-6 { padding: calc(24px * var(--responsive-scale)) !important; }
+.p-8 { padding: calc(32px * var(--responsive-scale)) !important; }
+
+.px-2 { padding-left: calc(8px * var(--responsive-scale)) !important; padding-right: calc(8px * var(--responsive-scale)) !important; }
+.px-4 { padding-left: calc(16px * var(--responsive-scale)) !important; padding-right: calc(16px * var(--responsive-scale)) !important; }
+.px-6 { padding-left: calc(24px * var(--responsive-scale)) !important; padding-right: calc(24px * var(--responsive-scale)) !important; }
+
+.py-2 { padding-top: calc(8px * var(--responsive-scale)) !important; padding-bottom: calc(8px * var(--responsive-scale)) !important; }
+.py-3 { padding-top: calc(12px * var(--responsive-scale)) !important; padding-bottom: calc(12px * var(--responsive-scale)) !important; }
+.py-4 { padding-top: calc(16px * var(--responsive-scale)) !important; padding-bottom: calc(16px * var(--responsive-scale)) !important; }
+.py-12 { padding-top: calc(48px * var(--responsive-scale)) !important; padding-bottom: calc(48px * var(--responsive-scale)) !important; }
+.py-16 { padding-top: calc(64px * var(--responsive-scale)) !important; padding-bottom: calc(64px * var(--responsive-scale)) !important; }
+
+/* Section padding */
+section {
+    padding: calc(64px * var(--responsive-scale)) calc(16px * var(--responsive-scale)) !important;
+}
+
+/* Border radius scaling */
+.rounded { border-radius: calc(4px * var(--responsive-scale)) !important; }
+.rounded-md { border-radius: calc(6px * var(--responsive-scale)) !important; }
+.rounded-lg { border-radius: calc(8px * var(--responsive-scale)) !important; }
+.rounded-xl { border-radius: calc(12px * var(--responsive-scale)) !important; }
+
+/* Mobile menu scaling */
+.mobile-menu {
+    top: calc(53px * var(--responsive-scale)) !important;
+}
+
+.mobile-menu-content {
+    padding: calc(16px * var(--responsive-scale)) !important;
+}
+
+.mobile-nav-link {
+    font-size: calc(16px * var(--responsive-scale)) !important;
+    padding: calc(12px * var(--responsive-scale)) calc(16px * var(--responsive-scale)) !important;
+    margin-bottom: calc(8px * var(--responsive-scale)) !important;
+}
+
+.mobile-menu-btn {
+    width: calc(40px * var(--responsive-scale)) !important;
+    height: calc(40px * var(--responsive-scale)) !important;
+    padding: calc(8px * var(--responsive-scale)) !important;
+}
+
+/* Logo banner scaling */
+.logo-item {
+    min-width: calc(200px * var(--responsive-scale)) !important;
+    height: calc(80px * var(--responsive-scale)) !important;
+    margin: 0 calc(20px * var(--responsive-scale)) !important;
+    font-size: calc(12px * var(--responsive-scale)) !important;
+}
+
+/* Video card scaling */
+#videos .card {
+    width: calc(360px * var(--responsive-scale)) !important;
+    height: calc(640px * var(--responsive-scale)) !important;
+}
+
+/* Smooth transitions only for interactive elements */
+button, a, .card, .cursor-card, .stats-grid, input, .theme-toggle, .lang-btn {
+    transition: all 0.2s ease;
+}
+
+/* Override mobile-specific fixed sizes */
+@media (max-width: 768px) {
+    body {
+        font-size: calc(14px * var(--responsive-scale)) !important;
+    }
+    
+    .cursor-header {
+        height: calc(56px * var(--responsive-scale)) !important;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100% !important;
+    }
+    
+    #videos .card {
+        width: 100% !important;
+        max-width: calc(360px * var(--responsive-scale)) !important;
+        height: auto !important;
+    }
+}
+
+/* Ensure crisp text rendering */
+body, button, input, select, textarea {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Fix any overflow issues */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Ensure smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Performance optimizations */
+img, video {
+    loading: lazy;
+}
+
+/* Prevent layout shifts */
+.logo-item, .card, .cursor-card {
+    contain: layout style;
+}
+
+/* GPU acceleration for animations */
+.logo-track {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Optimize video rendering */
+video {
+    object-fit: cover;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+} 
